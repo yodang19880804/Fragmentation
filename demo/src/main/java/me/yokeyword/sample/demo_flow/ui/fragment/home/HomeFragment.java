@@ -98,7 +98,10 @@ public class HomeFragment extends BaseMainFragment implements Toolbar.OnMenuItem
         mRecy = (RecyclerView) view.findViewById(R.id.recy);
 
         mToolbar.setTitle(R.string.home);
+
+        //
         initToolbarNav(mToolbar, true);
+
         mToolbar.inflateMenu(R.menu.home);
         mToolbar.setOnMenuItemClickListener(this);
 

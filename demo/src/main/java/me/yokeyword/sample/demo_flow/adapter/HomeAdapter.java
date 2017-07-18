@@ -42,6 +42,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 if (mClickListener != null) {
+                    // 向HomeFragment发送消息
                     mClickListener.onItemClick(position, v);
                 }
             }
